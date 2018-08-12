@@ -5,6 +5,10 @@ Download DynamoDB to run locally.
 # https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html
 
 Now start locally - default port is 8000 when running locally.
+```
+$ cd /opt/Kinektek/KinektekProjectCode/TestSpringBootApps/SpringBootDynamoDB
+$ java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb -inMemory
+```
 Optional parameters:
 
     * --sharedDb -> Share one db file among all the credential and regions.
